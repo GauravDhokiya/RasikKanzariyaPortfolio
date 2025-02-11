@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'MatterFont';
+    src: url('/assets/fonts/Matter-Regular.ttf') format('truetype');
+}
+
+:root {
+    --primary-color: #000000;
+    --secondary-color: #ffffff;
+
+    --font-size-xxs: 14px;
+    --font-size-xs: 18px;
+    --font-size-sm: 36px;
+    --font-size-md: 42px;
+    --font-size-lg: 48px;
+    --font-size-xl: 120px;
+    --font-size-xxl: 142px;
+    
+    /* Font family variables */
+    --font-family-primary: 'Urbanist', sans-serif;
+    --font-family-secondary: 'MatterFont', sans-serif;
+}

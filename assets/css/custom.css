@@ -1,0 +1,148 @@
+/* .hero-section-with-navbar{
+
+} */
+ .name{
+    font-family: var(--font-family-secondary);
+    font-size: var(--font-size-sm);
+    letter-spacing: 0.06em;
+    line-height: 36px;
+ }
+a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+nav{
+    /* position: fixed; */
+    /* width: 100%; */
+    /* display: flex;
+    justify-content: space-between; */
+    /* align-items: center; */
+    /* padding: 1.5em 2em; */
+    padding-top: 36px;
+    color: #cdc6be;
+    mix-blend-mode: difference;
+    z-index: 2;
+}
+nav > div{
+    flex: 1;
+}
+
+.toggle-btn {
+    display: flex;
+    justify-content: flex-end;
+}
+.menu-burger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.75em 2em 1.5em 2em;
+    background: rgba(255, 255, 255, 0);
+    outline: none;
+    border: none;
+    width: 28px;
+    height: 20px;
+    position: relative; /* Add this to position pseudo-elements correctly */
+    transition: all 250ms ease-out;
+    cursor: pointer;
+}
+/* for creating ham-burger menu */
+.menu-burger:before,
+.menu-burger:after,
+.menu-burger div {
+    content: "";
+    width: 40px;
+    height: 2px;
+    position: absolute;
+    background-color: #cdc6be;
+    transition: all 250ms ease-out;
+    will-change: transform;
+}
+.menu-burger:before {
+    transform: translateY(-10px); /* Adjusted for three lines */
+}
+.menu-burger div {
+    transform: translateY(0); /* Middle line */
+}
+.menu-burger:after {
+    transform: translateY(10px); /* Adjusted for three lines */
+}
+.active.menu-burger:before {
+    transform: translateY(0) rotate(45deg);
+}
+.active.menu-burger div {
+    opacity: 0; /* Hide the middle line when active */
+}
+.active.menu-burger:after {
+    transform: translateY(0) rotate(-45deg);
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    /* background-color: #141412; */
+    backdrop-filter: blur(30px);
+    background-color: #0e0e0ecc;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    will-change: transform;
+}
+.overlay-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.menu-item {
+    display: flex;
+    cursor: pointer;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.menu-item p{
+    position: relative;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 11vw;
+    line-height: 80%;
+    font-weight: 600;
+    will-change: transform;
+    transition: letter-spacing 0.3s;
+}
+.menu-item p:hover{
+    transition: letter-spacing 0.3s;
+    letter-spacing: 0.075em;
+}
+.menu-item p#active::after{
+   content: "";
+   position: absolute;
+   top: 50%;
+   left: 0;
+   transform: translateY(-50%);
+   background-color: #fc1234;
+   width:0%;
+   z-index: -1;
+   height: 12px;
+}
+.sub-nav {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.5em;
+    opacity: 0;
+}
+.sub-nav p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: #cdc6be;
+}
+
