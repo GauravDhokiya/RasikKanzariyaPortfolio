@@ -12,62 +12,63 @@
 </head>
 
 <body>
-  <div class="container-fluid hero-section-with-navbar vh-100 bg-black">
-    <div class="container">
-      <div class="main vh-100">
+  <div class="container-fluid bg-black">
+    <div class="container vh-100">
+      <div class="nav-wrapper">
+
         <div class="website-content">
-  
+
         </div>
+        
         <nav class="d-flex justify-content-between align-items-center">
-  
+
           <!-- logo -->
           <div class="logo">
             <img src="/assets/images/Logo.svg" alt="logo">
           </div>
-  
-          <!-- name -->
-          <div class="h-100 text-center d-none d-sm-block">
+
+        <!-- Name (Visible on larger screens) -->
+        <div class="h-100 text-center d-none d-sm-block">
             <p class="mb-0 name">
               <a href="#" class="text-white">
                 RASIK KANZARIYA
               </a>
             </p>
           </div>
-  
+
           <!-- hamburger menu -->
-          <div class="toggle-btn">
+          <div class="toggle-btn d-flex justify-content-end">
             <button class="menu-burger" onclick="this.classList.toggle('active');">
               <div></div> <!-- Middle line -->
             </button>
           </div>
         </nav>
-  
+
+        <!-- Overlay Menu -->
         <div class="overlay">
           <div class="overlay-menu">
             <div class="menu-item">
-              <p id="active"><a href="#">
+              <p id="active">
+                <a href="#">
                   About
-                </a></p>
+                </a>
+              </p>
             </div>
             <div class="menu-item">
-              <p><a href="#">
+              <p>
+                <a href="#">
                   Projects
-                </a></p>
+                </a>
+              </p>
             </div>
-  
+
             <div class="menu-item">
-              <p><a href="#">
+              <p>
+                <a href="#">
                   Contact
-                </a></p>
+                </a>
+              </p>
             </div>
-          </div>
-          <div class="sub-nav">
-  
-            <p><a href="#">Github</a></p>
-            <p>.</p>
-            <p><a href="#">Linkedin</a></p>
-            <p>.</p>
-  
           </div>
         </div>
       </div>
