@@ -19,7 +19,7 @@ a{
     z-index: 1000;
 }
 nav{
-    position: fixed;
+    position: sticky;
     width: 100%;
     display: flex;
     justify-content: space-between;
